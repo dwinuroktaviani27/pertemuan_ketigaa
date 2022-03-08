@@ -2,19 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import List from "./List";
 import reportWebVitals from './reportWebVitals';
 
-const HelloComponent = () =>{
-  return <HelloComponent/>
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-class StateFullComponent extends React.Component {
-  render() {
-    return <p>StateFullComponent</p>
-  }
-}
+// const HelloComponent = () =>{
+//   return <HelloComponent/>
+// }
 
-ReactDOM.render(<StateFullComponent/>,document.getElementById('root'));
+// class StateFullComponent extends React.Component {
+//   render() {
+//     return <p>StateFullComponent</p>
+//   }
+// }
+
+// ReactDOM.render(<StateFullComponent/>,document.getElementById('root'));
+// ReactDOM.render(<List/>,document.getElementById('root'));
 
 // ReactDOM.render(<HelloComponent/>,document.getElementById('root'));
 // ReactDOM.render(
